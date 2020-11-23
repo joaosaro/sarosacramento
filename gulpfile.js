@@ -35,8 +35,7 @@ function watch (){
 
 const dev = gulp.series(watch);
 const build = gulp.series(
-  gulp.parallel(buildHTML, jsMinify),
-  buildServe
+  gulp.parallel(buildHTML, jsMinify)
 );
 
 exports.dev = dev;
