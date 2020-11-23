@@ -1,4 +1,4 @@
 # global context
 [build]
-  publish = "dist"
-  command = "gulp"
+  publish = "dist/"
+  command = "gulp build"
