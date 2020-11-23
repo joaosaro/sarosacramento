@@ -13,15 +13,6 @@ function buildHTML () {
     .pipe(gulp.dest('./dist'))
 }
 
-function buildServe () {
-  browserSync.init({
-    server: {
-        baseDir: "./dist/",
-    },
-    port: 9001
-  });
-}
-
 function watch (){
   browserSync.init({
     server: {
@@ -35,8 +26,7 @@ function watch (){
 
 const dev = gulp.series(watch);
 const build = gulp.series(
-  gulp.parallel(buildHTML, jsMinify),
-  buildServe
+  gulp.parallel(buildHTML, jsMinify)
 );
 
 exports.dev = dev;
