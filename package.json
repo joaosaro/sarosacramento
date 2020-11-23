@@ -1,0 +1,26 @@
+{
+  "name": "sarosacramento",
+  "version": "1.0.0",
+  "description": "Saro & Sacramento corporative website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaosaro/sarosacramento.git"
+  },
+  "author": "João Saro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaosaro/sarosacramento/issues"
+  },
+  "homepage": "https://github.com/joaosaro/sarosacramento#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-sass": "^4.1.0"
+  }
+}
