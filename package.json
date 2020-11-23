@@ -4,7 +4,8 @@
   "description": "Saro & Sacramento corporative website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/joaosaro/sarosacramento#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-sass": "^4.1.0"
   }
 }
