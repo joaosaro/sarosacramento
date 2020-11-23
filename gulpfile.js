@@ -13,15 +13,6 @@ function buildHTML () {
     .pipe(gulp.dest('./dist'))
 }
 
-function buildServe () {
-  browserSync.init({
-    server: {
-        baseDir: "./dist/",
-    },
-    port: 9001
-  });
-}
-
 function watch (){
   browserSync.init({
     server: {
